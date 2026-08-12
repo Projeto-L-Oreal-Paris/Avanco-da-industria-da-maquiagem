@@ -248,13 +248,13 @@ Categorias observadas
 flowchart TB
     P["DIMENSÃO DA PESQUISA<br/>Panorama do mercado analisado"]
 
-    P --> M["12 MARCAS<br/>Diferentes posicionamentos<br/>e segmentos de mercado"]
+    P --> M["12 MARCAS <br/> Diferentes posicionamentos <br/> e segmentos de mercado"]
 
-    P --> L["23 LINHAS DE PRODUTOS<br/>Bases, corretivos, pós<br/>e produtos para a pele"]
+    P --> L["23 LINHAS DE PRODUTOS <br/> Bases, corretivos, pós <br/> e produtos para a pele"]
 
-    P --> T["175 TONALIDADES<br/>Diversidade de profundidades<br/>e famílias de subtom"]
+    P --> T["175 TONALIDADES <br/> Diversidade de profundidades <br/> e famílias de subtom"]
 
-    P --> F["29 FONTES REGISTRADAS<br/>Páginas oficiais, catálogos<br/>e evidências documentadas"]
+    P --> F["29 FONTES REGISTRADAS <br/> Páginas oficiais, catálogos <br/> e evidências documentadas"]
 
     classDef projeto fill:#2F1E1A,stroke:#B8844F,color:#FCF8F3,stroke-width:3px;
     classDef mercado fill:#6F3B46,stroke:#C78F62,color:#FCF8F3,stroke-width:2px;
@@ -361,15 +361,15 @@ Esse cenário reforça a importância de avaliar se a diversidade presente na so
 
 ```mermaid
 flowchart LR
-    A["DIVERSIDADE BRASILEIRA<br/>Diferentes tons, profundidades<br/>e subtons de pele"]
+    A["DIVERSIDADE BRASILEIRA <br/> Diferentes tons, profundidades <br/> e subtons de pele"]
 
-    B["NECESSIDADE DE REPRESENTAÇÃO<br/>Consumidores precisam encontrar<br/>produtos adequados às suas peles"]
+    B["NECESSIDADE DE REPRESENTAÇÃO <br/> Consumidores precisam encontrar <br/> produtos adequados às suas peles"]
 
-    C["ANÁLISE DO MERCADO<br/>Cartelas, preços, estoques,<br/>subtons e evidências"]
+    C["ANÁLISE DO MERCADO <br/> Cartelas, preços, estoques, <br/> subtons e evidências"]
 
-    D["IDENTIFICAÇÃO DE LACUNAS<br/>Ausência, concentração ou baixa<br/>disponibilidade de determinados tons"]
+    D["IDENTIFICAÇÃO DE LACUNAS <br/> Ausência, concentração ou baixa <br/> disponibilidade de determinados tons"]
 
-    E["OPORTUNIDADE ESTRATÉGICA<br/>Produtos mais inclusivos,<br/>acessíveis e representativos"]
+    E["OPORTUNIDADE ESTRATÉGICA <br/> Produtos mais inclusivos, <br/> acessíveis e representativos"]
 
     A --> B
     B --> C
@@ -794,23 +794,23 @@ e as decisões relacionadas a cada dimensão.
 
 ```mermaid
 flowchart TB
-    O["OBJETIVO CENTRAL<br/>Avaliar a inclusão das linhas de maquiagem<br/>comercializadas no Brasil"]
+    O["OBJETIVO CENTRAL <br/> Avaliar a inclusão das linhas de maquiagem <br/> comercializadas no Brasil"]
 
-    O --> P["PESQUISAR<br/>Construir uma base nacional<br/>organizada e rastreável"]
+    O --> P["PESQUISAR <br/> Construir uma base nacional <br/> organizada e rastreável"]
 
-    O --> A["ANALISAR<br/>Comparar tons, subtons,<br/>preços e disponibilidade"]
+    O --> A["ANALISAR <br/> Comparar tons, subtons, <br/> preços e disponibilidade"]
 
-    O --> V["VISUALIZAR<br/>Transformar os dados em<br/>indicadores e dashboards"]
+    O --> V["VISUALIZARv <br/> Transformar os dados em <br/> indicadores e dashboards"]
 
-    O --> E["ESTRATEGIZAR<br/>Converter padrões e lacunas<br/>em oportunidades para a Aurena"]
+    O --> E["ESTRATEGIZAR <br/> Converter padrões e lacunas <br/> em oportunidades para a Aurena"]
 
-    P --> R["RASTREABILIDADE<br/>Fontes, métodos e critérios<br/>claramente documentados"]
+    P --> R["RASTREABILIDADE <br/> Fontes, métodos e critérios <br/> claramente documentados"]
 
-    A --> I["INTELIGÊNCIA ANALÍTICA<br/>Padrões, diferenças e<br/>lacunas identificadas"]
+    A --> I["INTELIGÊNCIA ANALÍTICA <br/> Padrões, diferenças e <br/> lacunas identificadas"]
 
-    V --> C["COMUNICAÇÃO VISUAL<br/>Informações acessíveis,<br/>comparáveis e compreensíveis"]
+    V --> C["COMUNICAÇÃO VISUAL <br/> Informações acessíveis, <br/> comparáveis e compreensíveis"]
 
-    E --> D["DECISÃO ORIENTADA POR DADOS<br/>Produto, preço, estoque,<br/>posicionamento e comunicação"]
+    E --> D["DECISÃO ORIENTADA POR DADOS <br/> Produto, preço, estoque, <br/> posicionamento e comunicação"]
 
     classDef central fill:#2F1E1A,stroke:#B8844F,color:#FCF8F3,stroke-width:3px;
     classDef movimento fill:#6F3B46,stroke:#C78F62,color:#FCF8F3,stroke-width:2px;
@@ -930,23 +930,23 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    A["01 · COLETA<br/>Marcas, produtos,<br/>tons, preços e fontes"]
+    A["01 · COLETA <br/> Marcas, produtos, <br/> tons, preços e fontes"]
 
-    B["02 · PADRONIZAÇÃO<br/>Nomes, categorias,<br/>formatos e campos"]
+    B["02 · PADRONIZAÇÃO <br/> Nomes, categorias, <br/> formatos e campos"]
 
-    C{"03 · CLASSIFICAÇÃO<br/>Qual é a natureza<br/>da informação?"}
+    C{"03 · CLASSIFICAÇÃO <br/> Qual é a natureza <br/> da informação?"}
 
-    D["DADO OFICIAL<br/>Publicado pela marca<br/>ou fonte institucional"]
+    D["DADO OFICIAL <br/> Publicado pela marca <br/> ou fonte institucional"]
 
-    E["CLASSIFICAÇÃO ANALÍTICA<br/>Interpretação baseada<br/>em critérios documentados"]
+    E["CLASSIFICAÇÃO ANALÍTICA <br/> Interpretação baseada <br/> em critérios documentados"]
 
-    F["ESTIMATIVA<br/>Informação utilizada<br/>apenas para exploração"]
+    F["ESTIMATIVA <br/> Informação utilizada <br/> apenas para exploração"]
 
-    G{"04 · COBERTURA<br/>A evidência atinge<br/>pelo menos 75%?"}
+    G{"04 · COBERTURA <br/> A evidência atinge <br/> pelo menos 75%?"}
 
-    H["ELEGÍVEL<br/>Participa das comparações<br/>e do índice exploratório"]
+    H["ELEGÍVEL <br/> Participa das comparações <br/> e do índice exploratório"]
 
-    I["NÃO ELEGÍVEL<br/>Permanece na base,<br/>mas fora do ranking"]
+    I["NÃO ELEGÍVEL <br/> Permanece na base, <br/> mas fora do ranking"]
 
     A --> B
     B --> C
@@ -1489,19 +1489,19 @@ erDiagram
 
 ```mermaid
 flowchart LR
-    A["MARCAS<br/>Identidade e posicionamento"] --> B["LINHAS DE PRODUTOS<br/>Categoria, preço e cartela"]
-    B --> C["TONS DETALHADOS<br/>Profundidade, subtom<br/>e disponibilidade"]
-    D["FONTES<br/>Origem, data e confiança"] --> A
+    A["MARCAS <br/> Identidade e posicionamento"] --> B["LINHAS DE PRODUTOS <br/> Categoria, preço e cartela"]
+    B --> C["TONS DETALHADOS <br/> Profundidade, subtom <br/> e disponibilidade"]
+    D["FONTES <br/> Origem, data e confiança"] --> A
     D --> B
     D --> C
 
-    C --> E["BASE ANALÍTICA<br/>Dados integrados e validados"]
+    C --> E["BASE ANALÍTICA <br/> Dados integrados e validados"]
     B --> E
     A --> E
 
-    E --> F["PYTHON<br/>Tratamento e indicadores"]
-    F --> G["POWER BI<br/>Visualizações interativas"]
-    G --> H["STORYTELLING<br/>Lacunas e oportunidades"]
+    E --> F["PYTHON <br/> Tratamento e indicadores"]
+    F --> G["POWER BI <br/> Visualizações interativas"]
+    G --> H["STORYTELLING <br/> Lacunas e oportunidades"]
 
     classDef origem fill:#2F1E1A,stroke:#B8844F,color:#FCF8F3,stroke-width:2px;
     classDef produto fill:#6F3B46,stroke:#C78F62,color:#FCF8F3,stroke-width:2px;
@@ -1720,12 +1720,12 @@ em evidências, indicadores e decisões estratégicas.
 
 ```mermaid
 flowchart LR
-    A["01 · COLETA<br/>Fontes e produtos"] --> B["02 · TRATAMENTO<br/>Limpeza e padronização"]
-    B --> C["03 · VALIDAÇÃO<br/>Controle das evidências"]
-    C --> D["04 · ANÁLISE<br/>Indicadores e lacunas"]
-    D --> E["05 · POWER BI<br/>Dashboard executivo"]
-    E --> F["06 · STORYTELLING<br/>Narrativa de impacto"]
-    F --> G["07 · ENTREGA<br/>Apresentação final"]
+    A["01 · COLETA <br/> Fontes e produtos"] --> B["02 · TRATAMENTO <br/> Limpeza e padronização"]
+    B --> C["03 · VALIDAÇÃO <br/> Controle das evidências"]
+    C --> D["04 · ANÁLISE <br/> Indicadores e lacunas"]
+    D --> E["05 · POWER BI <br/> Dashboard executivo"]
+    E --> F["06 · STORYTELLING <br/> Narrativa de impacto"]
+    F --> G["07 · ENTREGA <br/> Apresentação final"]
 
     classDef dados fill:#2F1E1A,stroke:#B8844F,color:#FCF8F3,stroke-width:2px;
     classDef inteligencia fill:#6F3B46,stroke:#C78F62,color:#FCF8F3,stroke-width:2px;
@@ -2217,13 +2217,13 @@ shade_equity_analytics_starter/
 
 ```mermaid
 flowchart LR
-    A["DATA / RAW<br/>Bases originais"] --> B["NOTEBOOKS<br/>Exploração e tratamento"]
-    B --> C["DATA / PROCESSED<br/>Bases tratadas"]
-    C --> D["SRC<br/>Scripts reutilizáveis"]
-    C --> E["POWER BI<br/>Dashboard e indicadores"]
+    A["DATA / RAW <br/> Bases originais"] --> B["NOTEBOOKS <br/> Exploração e tratamento"]
+    B --> C["DATA / PROCESSED <br/> Bases tratadas"]
+    C --> D["SRC <br/> Scripts reutilizáveis"]
+    C --> E["POWER BI <br/> Dashboard e indicadores"]
     D --> E
-    E --> F["REPORTS / FIGURES<br/>Gráficos e evidências"]
-    F --> G["README & APRESENTAÇÃO<br/>Documentação e storytelling"]
+    E --> F["REPORTS / FIGURES <br/> Gráficos e evidências"]
+    F --> G["README & APRESENTAÇÃO <br/> Documentação e storytelling"]
 
     H["ASSETS<br/>Logo, hero e identidade visual"] --> G
 
@@ -2391,10 +2391,10 @@ mas também os critérios, limites e cuidados utilizados na interpretação.
 
 ```mermaid
 flowchart LR
-    A["FONTES<br/>RASTREÁVEIS"] --> B["DADOS<br/>TRATADOS"]
-    B --> C["ANÁLISE<br/>CONTEXTUALIZADA"]
-    C --> D["VISUALIZAÇÃO<br/>RESPONSÁVEL"]
-    D --> E["DECISÃO<br/>ESTRATÉGICA"]
+    A["FONTES <br/> RASTREÁVEIS"] --> B["DADOS <br/> TRATADOS"]
+    B --> C["ANÁLISE <br/> CONTEXTUALIZADA"]
+    C --> D["VISUALIZAÇÃO <br/> RESPONSÁVEL"]
+    D --> E["DECISÃO <br/> ESTRATÉGICA"]
 
     classDef origem fill:#2F1E1A,stroke:#B8844F,color:#FCF8F3,stroke-width:2px;
     classDef analise fill:#6F3B46,stroke:#C78F62,color:#FCF8F3,stroke-width:2px;

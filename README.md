@@ -66,16 +66,6 @@
 
 <br>
 
-</div>
-
-</div>
-
-<br>
-
----
-
-<br>
-
 ## 01 — VISÃO GERAL
 
 <h3 align="center">Da representatividade à decisão</h3>
@@ -116,10 +106,10 @@ A análise vai além da quantidade de cores anunciada por uma marca. O projeto c
 
 ```mermaid
 flowchart LR
-    A["LACUNA DO MERCADO<br/>Oferta que pode não representar<br/>toda a diversidade de peles"]
-    B["ANÁLISE DE DADOS<br/>Tons, subtons, preços,<br/>disponibilidade e evidências"]
-    C["IDENTIFICAÇÃO DE PADRÕES<br/>Comparações, desigualdades<br/>e oportunidades"]
-    D["OPORTUNIDADE AURENA<br/>Decisões de produto,<br/>posicionamento e comunicação"]
+    A["LACUNA DO MERCADO <br/> Oferta que pode não representar <br/> toda a diversidade de peles"]
+    B["ANÁLISE DE DADOS <br/>Tons, subtons, preços, <br/> disponibilidade e evidências"]
+    C["IDENTIFICAÇÃO DE PADRÕES <br/> Comparações, desigualdades <br/> e oportunidades"]
+    D["OPORTUNIDADE AURENA <br/> Decisões de produto, <br/> posicionamento e comunicação"]
 
     A --> B
     B --> C

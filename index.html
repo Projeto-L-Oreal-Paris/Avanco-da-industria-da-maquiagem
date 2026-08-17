@@ -1,0 +1,909 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>AURENA — Beleza sem Lacunas</title>
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="intro-lock">
+    <!-- =========================================
+       INTRODUÇÃO AURENA
+       ========================================= -->
+
+    <section class="intro" id="intro">
+      <!-- Canvas responsável pelas partículas -->
+      <canvas id="powderCanvas"></canvas>
+
+      <!-- Luzes de fundo -->
+      <div class="ambient ambient-one"></div>
+      <div class="ambient ambient-two"></div>
+
+      <!-- Pó compacto -->
+      <div class="compact" id="compact">
+        <div class="compact-ring"></div>
+
+        <div class="powder-surface">
+          <!-- Rachaduras -->
+          <span class="crack crack-1"></span>
+          <span class="crack crack-2"></span>
+          <span class="crack crack-3"></span>
+          <span class="crack crack-4"></span>
+          <span class="crack crack-5"></span>
+          <span class="crack crack-6"></span>
+          <span class="crack crack-7"></span>
+          <span class="crack crack-8"></span>
+        </div>
+      </div>
+
+      <!-- Marca -->
+      <div class="brand-reveal" id="brandReveal">
+        <span class="brand-kicker"> BELEZA SEM LACUNAS </span>
+
+        <h1 class="brand-name">AURENA</h1>
+
+        <div class="brand-line"></div>
+
+        <p class="brand-slogan">
+          A nova geração da beleza começa em
+          <strong>você.</strong>
+        </p>
+      </div>
+
+      <!-- Texto inferior -->
+      <p class="intro-hint" id="introHint">clique ou toque para revelar</p>
+
+      <!-- Botão -->
+      <button class="skip-intro" id="skipIntro" type="button">
+        pular introdução
+      </button>
+    </section>
+
+    <!-- =========================================
+       PRÉVIA DA HOME
+       ========================================= -->
+
+    <main class="site-content">
+      <section class="preview-hero">
+        <!-- Texto -->
+        <div class="preview-copy">
+          <span class="preview-eyebrow"> AURENA · DATA EXPERIENCE </span>
+
+          <h2>
+            Dados que enxergam
+            <em>todas as peles.</em>
+          </h2>
+
+          <p>
+            Uma experiência visual sobre tons, representatividade e as lacunas
+            do mercado brasileiro de beleza.
+          </p>
+
+          <a href="#projeto" class="preview-button"> explorar análise </a>
+        </div>
+
+        <!-- Elemento visual -->
+        <!-- =========================================
+     VÍDEO AURENA
+========================================= -->
+
+        <div class="aurena-video-container">
+          <div class="aurena-video-frame">
+            <video
+              id="aurenaVideo"
+              class="aurena-video"
+              muted
+              playsinline
+              autoplay
+              loop
+              preload="metadata"
+            >
+              <source src="./assets/aurena-beauty.mp4" type="video/mp4" />
+            </video>
+
+            <!-- detalhe editorial -->
+
+            <div class="video-gradient"></div>
+
+            <!-- identificação discreta -->
+
+            <div class="video-label">
+              <span> AURENA </span>
+
+              <small> BELEZA SEM LACUNAS </small>
+            </div>
+          </div>
+
+          <!-- elemento decorativo -->
+
+          <div class="video-circle video-circle-one"></div>
+
+          <div class="video-circle video-circle-two"></div>
+        </div>
+      </section>
+
+      <!-- =========================================
+   EQUIPE AURENA
+   ========================================= -->
+      <section class="team-section" id="equipe">
+        <div class="team-bg-glow team-bg-glow-1"></div>
+        <div class="team-bg-glow team-bg-glow-2"></div>
+
+        <div class="team-container">
+          <div class="team-header">
+            <span class="team-tag">NOSSA EQUIPE</span>
+            <h2>
+              Pessoas por trás de uma beleza
+              <span>sem lacunas</span>
+            </h2>
+            <p>
+              Unimos dados, design, tecnologia e propósito para investigar
+              representatividade no mercado da beleza brasileira e transformar
+              análise em impacto.
+            </p>
+          </div>
+
+          <div class="team-grid">
+            <!-- 1 -->
+            <article class="team-card">
+              <div class="team-photo-wrapper">
+                <img
+                  src="./assets/team/ana.jpg"
+                  alt="Foto de Ana Beatriz"
+                  class="team-photo"
+                />
+              </div>
+
+              <div class="team-info">
+                <h3>Ana Beatriz</h3>
+                <span class="team-role"
+                  >Arquitetura de dados e Visualização</span
+                >
+                <p>
+                  Responsável por toda a criação, estruturação e arquitetura do
+                  banco de dados do projeto, além da construção dos dashboards e
+                  transformação dos dados em leitura estratégica.
+                </p>
+
+                <a
+                  href="https://www.linkedin.com/in/anbez/"
+                  target="_blank"
+                  class="team-linkedin"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A2.06 2.06 0 0 0 3.19 5.06c0 1.13.92 2.06 2.06 2.06a2.06 2.06 0 1 0 0-4.12ZM20.44 12.74c0-3.27-1.74-4.79-4.06-4.79-1.87 0-2.71 1.03-3.18 1.75V8.5H9.81c.04.8 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.13-.92.27-.68.88-1.38 1.9-1.38 1.34 0 1.88 1.02 1.88 2.52V20h3.38v-7.26Z"
+                    />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="team-card">
+              <div class="team-photo-wrapper">
+                <img
+                  src="./assets/team/marcia.jpg"
+                  alt="Foto de Adrielle"
+                  class="team-photo"
+                />
+              </div>
+
+              <div class="team-info">
+                <h3>Adrielle Magalhães</h3>
+                <span class="team-role"
+                  >Product Manager & Engenharia de Dados</span
+                >
+                <p>
+                  Responsável pela organização geral do projeto, estruturação e
+                  pipeline de dados. Atuou na extração via API (IBGE),
+                  tratamento e padronização com Python (Pandas), preparação para
+                  integração com SQL e análises analíticas.
+                </p>
+
+                <a
+                  href="https://www.linkedin.com/in/adriellermagalhaes/"
+                  target="_blank"
+                  class="team-linkedin"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A2.06 2.06 0 0 0 3.19 5.06c0 1.13.92 2.06 2.06 2.06a2.06 2.06 0 1 0 0-4.12ZM20.44 12.74c0-3.27-1.74-4.79-4.06-4.79-1.87 0-2.71 1.03-3.18 1.75V8.5H9.81c.04.8 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.13-.92.27-.68.88-1.38 1.9-1.38 1.34 0 1.88 1.02 1.88 2.52V20h3.38v-7.26Z"
+                    />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="team-card">
+              <div class="team-photo-wrapper">
+                <img
+                  src="./assets/team/cassiano.jpg"
+                  alt="Foto de Cassiano "
+                  class="team-photo"
+                />
+              </div>
+
+              <div class="team-info">
+                <h3>Cassiano Calian</h3>
+                <span class="team-role"
+                  >Front-end, Site e Experiência Visual</span
+                >
+                <p>
+                  Responsável pela construção visual do projeto, identidade da
+                  AURENA e desenvolvimento da experiência do site.
+                </p>
+
+                <a
+                  href="https://www.linkedin.com/in/cassianocalian/"
+                  target="_blank"
+                  class="team-linkedin"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A2.06 2.06 0 0 0 3.19 5.06c0 1.13.92 2.06 2.06 2.06a2.06 2.06 0 1 0 0-4.12ZM20.44 12.74c0-3.27-1.74-4.79-4.06-4.79-1.87 0-2.71 1.03-3.18 1.75V8.5H9.81c.04.8 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.13-.92.27-.68.88-1.38 1.9-1.38 1.34 0 1.88 1.02 1.88 2.52V20h3.38v-7.26Z"
+                    />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- 4 -->
+            <article class="team-card">
+              <div class="team-photo-wrapper">
+                <img
+                  src="./assets/team/juliana.jpg"
+                  alt="Foto de Juliana"
+                  class="team-photo"
+                />
+              </div>
+
+              <div class="team-info">
+                <h3>Juliana Matias</h3>
+                <span class="team-role">Design e Apoio Criativo</span>
+                <p>
+                  Atuou na construção visual do projeto, colaborando com a
+                  apresentação estética, coerência da marca e apoio criativo.
+                </p>
+
+                <a
+                  href="https://www.linkedin.com/in/juliana-matias/"
+                  target="_blank"
+                  class="team-linkedin"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A2.06 2.06 0 0 0 3.19 5.06c0 1.13.92 2.06 2.06 2.06a2.06 2.06 0 1 0 0-4.12ZM20.44 12.74c0-3.27-1.74-4.79-4.06-4.79-1.87 0-2.71 1.03-3.18 1.75V8.5H9.81c.04.8 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.13-.92.27-.68.88-1.38 1.9-1.38 1.34 0 1.88 1.02 1.88 2.52V20h3.38v-7.26Z"
+                    />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- 5 -->
+            <article class="team-card">
+              <div class="team-photo-wrapper">
+                <img
+                  src="./assets/team/karla.jpg"
+                  alt="Foto de Karla"
+                  class="team-photo"
+                />
+              </div>
+
+              <div class="team-info">
+                <h3>Karla</h3>
+                <span class="team-role">Python e Análise de Dados</span>
+                <p>
+                  Atuou na exploração dos dados, limpeza das bases e apoio
+                  analítico para gerar os insights centrais do projeto.
+                </p>
+
+                <a
+                  href="https://www.linkedin.com/in/karla-maria-m-b86157215/"
+                  target="_blank"
+                  class="team-linkedin"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A2.06 2.06 0 0 0 3.19 5.06c0 1.13.92 2.06 2.06 2.06a2.06 2.06 0 1 0 0-4.12ZM20.44 12.74c0-3.27-1.74-4.79-4.06-4.79-1.87 0-2.71 1.03-3.18 1.75V8.5H9.81c.04.8 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.13-.92.27-.68.88-1.38 1.9-1.38 1.34 0 1.88 1.02 1.88 2.52V20h3.38v-7.26Z"
+                    />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- 6 -->
+            <article class="team-card">
+              <div class="team-photo-wrapper">
+                <img
+                  src="./assets/team/wandernilson.jpg"
+                  alt="Foto de Wandernilson"
+                  class="team-photo"
+                />
+              </div>
+
+              <div class="team-info">
+                <h3>Wandernilson G. Valentim</h3>
+                <span class="team-role">DAX, Power BI e Modelagem</span>
+                <p>
+                  Contribuiu com a modelagem analítica e apoio na construção dos
+                  indicadores e recursos de visualização no Power BI.
+                </p>
+
+                <a
+                  href="https://www.linkedin.com/in/wandernilsongv/"
+                  target="_blank"
+                  class="team-linkedin"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A2.06 2.06 0 0 0 3.19 5.06c0 1.13.92 2.06 2.06 2.06a2.06 2.06 0 1 0 0-4.12ZM20.44 12.74c0-3.27-1.74-4.79-4.06-4.79-1.87 0-2.71 1.03-3.18 1.75V8.5H9.81c.04.8 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.13-.92.27-.68.88-1.38 1.9-1.38 1.34 0 1.88 1.02 1.88 2.52V20h3.38v-7.26Z"
+                    />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+     O PROBLEMA
+===================================================== -->
+
+      <section class="problem-section" id="projeto">
+        <!-- luzes decorativas -->
+        <div class="problem-light problem-light-one"></div>
+        <div class="problem-light problem-light-two"></div>
+
+        <!-- primeira tela -->
+        <div class="problem-intro reveal-problem">
+          <span class="problem-eyebrow"> 01 · O PROBLEMA </span>
+
+          <h2 class="problem-question">
+            Se o Brasil é plural,
+            <em>por que a beleza ainda não enxerga todos os tons?</em>
+          </h2>
+
+          <p class="problem-description">
+            Mais da metade da população brasileira se declara preta ou parda.
+            Mesmo assim, a representatividade da beleza ainda não acompanha a
+            diversidade real do país.
+          </p>
+
+          <div class="problem-mini-stat hero-55-card">
+            <strong>55,5%</strong>
+            <span>da população brasileira se declara preta ou parda</span>
+          </div>
+          <div class="problem-people">
+            <!-- AURA DOURADA ATRÁS DAS MODELOS -->
+            <div class="people-luxury-aura" aria-hidden="true"></div>
+
+            <!-- PARTÍCULAS DE PÓ DE MAQUIAGEM -->
+            <div class="people-makeup-dust" aria-hidden="true"></div>
+
+            <img
+              src="./assets/diversidade-mulheres.png"
+              alt="Diversidade de tons de pele"
+            />
+
+            <div class="problem-people-fade" aria-hidden="true"></div>
+          </div>
+
+          <div class="scroll-indicator">
+            <span>ROLE PARA DESCOBRIR</span>
+
+            <div class="scroll-line"></div>
+          </div>
+        </div>
+
+        <!-- =====================================================
+     EVIDÊNCIA - REPORTAGEM + VÍDEO
+====================================================== -->
+
+        <section class="evidencia" id="evidencia">
+          <div class="evidencia-luz evidencia-luz-1"></div>
+          <div class="evidencia-luz evidencia-luz-2"></div>
+          <div class="evidencia-powder" aria-hidden="true"></div>
+          <div class="evidencia-shimmer" aria-hidden="true"></div>
+
+          <div class="evidencia-container">
+            <!-- CABEÇALHO -->
+            <header class="evidencia-header evidencia-reveal">
+              <span class="evidencia-numero"> EVIDÊNCIA 01 </span>
+
+              <h2>
+                Quando a ausência deixa de ser
+                <span>apenas um número.</span>
+              </h2>
+
+              <p>
+                O mercado diz que avançou. Mas a experiência conta outra
+                história.
+              </p>
+            </header>
+
+            <!-- CONTEÚDO PRINCIPAL -->
+            <div class="evidencia-grid evidencia-reveal">
+              <!-- REPORTAGEM -->
+              <a
+                class="reportagem-card"
+                href="https://revistacenarium.com.br/apesar-do-avanco-do-mercado-bases-para-tons-de-pele-negra-ainda-sao-dificeis-de-encontrar/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="reportagem-imagem">
+                  <img
+                    src="./assets/reportagem-cenarium.webp"
+                    alt="Reportagem sobre dificuldade em encontrar bases para tons de pele negra"
+                  />
+
+                  <div class="reportagem-overlay"></div>
+                </div>
+
+                <div class="reportagem-info">
+                  <div>
+                    <span>REPORTAGEM</span>
+
+                    <p>Revista Cenarium</p>
+                  </div>
+
+                  <span class="reportagem-data"> 25.05.2024 </span>
+                </div>
+              </a>
+
+              <!-- VÍDEO -->
+              <div class="video-evidencia-card">
+                <video
+                  id="videoEvidencia"
+                  muted
+                  playsinline
+                  loop
+                  preload="metadata"
+                >
+                  <source
+                    src="./assets/reel-youthforia.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+
+                <div class="video-etiqueta">EXPERIÊNCIA REAL</div>
+
+                <button class="video-som" id="videoSom" type="button">
+                  ATIVAR SOM
+                </button>
+              </div>
+            </div>
+
+            <!-- FRASE IMPACTO -->
+            <div class="evidencia-impacto evidencia-reveal">
+              <div class="linha-impacto"></div>
+
+              <p class="impacto-pequeno">Então fica uma pergunta:</p>
+
+              <blockquote>
+                Se uma consumidora precisa
+                <strong>misturar produtos</strong>
+                para encontrar a própria cor,
+
+                <span> podemos realmente chamar isso de escolha? </span>
+              </blockquote>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==================================================
+     AURENA — DO CENSO AO MERCADO
+================================================== -->
+
+        <section class="aurena-story" id="aurenaStory">
+          <!-- ==========================================
+         01 — PERGUNTA ANTES DO VÍDEO
+    =========================================== -->
+          <!--
+
+          *<div class="aurena-story__intro">
+            <span class="aurena-story__eyebrow">
+              DADOS QUE CONTAM UMA HISTÓRIA
+            </span>
+
+            <h2>
+              Mas o que esses
+              <strong>55,5%</strong>
+              realmente representam?
+            </h2>
+
+            <p>
+              Antes de olhar para o mercado, precisamos olhar para o Brasil.
+            </p>
+          </div>
+
+          <!-- ==========================================
+         02 — VÍDEO OFICIAL IBGE
+         COMEÇA: 0:23
+         TERMINA: 0:44
+    =========================================== -->
+
+          <div class="aurena-story__video-area">
+            <div class="aurena-story__video-glow"></div>
+
+            <div class="aurena-story__video">
+              <video
+                id="videoIbge"
+                class="video-ibge"
+                muted
+                playsinline
+                preload="auto"
+                loop
+              >
+                <source
+                  src="./assets/ibge-136-cores-trecho.mp4"
+                  type="video/mp4"
+                />
+
+                Seu navegador não suporta reprodução de vídeo.
+              </video>
+            </div>
+
+            <div class="aurena-story__source">
+              <span></span>
+
+              REPORTAGEM · SP1 / G1 · DADOS DO IBGE
+
+              <span></span>
+            </div>
+          </div>
+
+          <!-- ==========================================
+         03 — PERGUNTA DE IMPACTO
+    =========================================== -->
+
+          <div class="aurena-story__impact">
+            <span class="aurena-story__eyebrow">
+              ENTÃO SURGE UMA PERGUNTA
+            </span>
+
+            <h2>
+              Se a diversidade está
+              <em>na pele do Brasil...</em>
+            </h2>
+
+            <div class="aurena-story__line"></div>
+
+            <h3>
+              ...por que ela ainda não está
+              <strong>em todas as prateleiras?</strong>
+            </h3>
+          </div>
+
+          <!-- =====================================================
+     AURENA — TRANSIÇÃO PARA OS DADOS
+===================================================== -->
+
+          <section class="data-transition" id="dataTransition">
+            <div class="data-transition-glow data-transition-glow-1"></div>
+            <div class="data-transition-glow data-transition-glow-2"></div>
+
+            <div class="data-transition-powder"></div>
+
+            <div class="data-transition-content">
+              <span class="data-transition-eyebrow">
+                DO PROBLEMA AOS DADOS
+              </span>
+
+              <h2>
+                Uma experiência pode revelar
+                <em>um problema.</em>
+              </h2>
+
+              <div class="data-transition-line"></div>
+
+              <h3>
+                Mas os dados mostram
+                <strong>o tamanho dele.</strong>
+              </h3>
+
+              <p>
+                Foi aí que decidimos
+                <span>medir essa ausência.</span>
+              </p>
+            </div>
+          </section>
+        </section>
+
+        <!-- =====================================================
+             AURENA — POWER BI
+        ===================================================== -->
+
+        <section class="powerbi-section" id="powerbi">
+          <div class="powerbi-glow"></div>
+
+          <div class="powerbi-container">
+            <header class="powerbi-header">
+              <span> 03 · ANÁLISE </span>
+
+              <h2>
+                O que os dados
+                <em>revelam?</em>
+              </h2>
+
+              <p>
+                Da população brasileira à oferta do mercado: uma leitura sobre
+                tons, inclusão e representatividade.
+              </p>
+            </header>
+
+            <div class="powerbi-frame">
+              <iframe
+                class="powerbi-iframe"
+                title="AURENA — Dashboard Interativo"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNDg3NWFkZDEtMTcyMS00ZDdkLWEwNDUtY2I1MTg0NTg1MWFkIiwidCI6Ijk1YjQ3NzJiLWViYjYtNGQ4Ni1hNDE2LTEzYTIwMWVhMGM1ZCJ9&pageName=2a7285688c053e726405"
+                frameborder="0"
+                allowfullscreen="true"
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- =====================================================
+     AURENA — DOS DADOS À POSSIBILIDADE
+===================================================== -->
+
+        <section class="aurena-solution-final" id="solucaoFinal">
+          <div class="solution-final-glow solution-final-glow-left"></div>
+          <div class="solution-final-glow solution-final-glow-right"></div>
+
+          <div class="solution-final-powder" aria-hidden="true"></div>
+
+          <div class="solution-final-content final-reveal">
+            <div class="solution-final-layout">
+              <!-- TEXTO PRINCIPAL -->
+              <div class="solution-final-main">
+                <span class="solution-final-eyebrow">
+                  DOS DADOS À POSSIBILIDADE
+                </span>
+
+                <h2>
+                  Os dados mostraram
+                  <em>a lacuna.</em>
+                </h2>
+
+                <div class="solution-final-line"></div>
+
+                <p>
+                  A AURENA decidiu transformá-la
+                  <strong>em possibilidade.</strong>
+                </p>
+
+                <div class="solution-number">
+                  <span class="solution-number-value">30</span>
+
+                  <div class="solution-number-copy">
+                    <strong>tons</strong>
+                    <span>
+                      pensados para ampliar possibilidades de representação.
+                    </span>
+                  </div>
+                </div>
+
+                <a
+                  href="https://www.instagram.com/aurenamake/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="solution-scroll"
+                >
+                  <span>CONHEÇA AURENA</span>
+                  <div>↓</div>
+                </a>
+              </div>
+
+              <!-- CARD DO INSTAGRAM -->
+              <aside class="solution-instagram-card">
+                <div class="solution-instagram-image">
+                  <img
+                    src="./assets/instagram.png"
+                    alt="Instagram da AURENA"
+                  />
+                </div>
+
+                <p class="solution-instagram-text">
+                  Conheça mais a fundo a nossa solução.
+                </p>
+
+                <a
+                  href="https://www.instagram.com/aurenamake/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="solution-instagram-handle"
+                >
+                  @aurenamake
+                </a>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <!-- =====================================================
+     AURENA — 30 TONS · REVELAÇÃO EM 3 ATOS
+===================================================== -->
+
+        <section class="representation-epic" id="representationEpic">
+          <!-- FUNDO -->
+          <div class="representation-epic-glow epic-glow-left"></div>
+          <div class="representation-epic-glow epic-glow-right"></div>
+
+          <div class="representation-epic-powder" aria-hidden="true"></div>
+
+          <div class="representation-epic-content">
+            <!-- TÍTULO -->
+
+            <header class="representation-epic-header">
+              <span> UMA PROPOSTA MAIS REPRESENTATIVA </span>
+
+              <h2>
+                30 tons não são
+                <em>apenas 30 cores.</em>
+              </h2>
+            </header>
+
+            <!-- PALCO -->
+
+            <div class="representation-stage">
+              <div class="representation-stage-glow" aria-hidden="true"></div>
+
+              <div class="representation-sweep" aria-hidden="true"></div>
+
+              <!-- CONTADOR -->
+
+              <div class="representation-counter">
+                <strong id="representationCounter"> 0 </strong>
+
+                <span>/ 30</span>
+              </div>
+
+              <!-- GRUPO 01 -->
+
+              <div class="representation-row row-01">
+                <img
+                  src="./assets/aurena-grupo-01.png"
+                  alt="Primeiro grupo de tons AURENA"
+                  class="representation-group representation-group-01"
+                />
+              </div>
+
+              <!-- GRUPO 02 -->
+
+              <div class="representation-row row-02">
+                <img
+                  src="./assets/aurena-grupo-02.png"
+                  alt="Segundo grupo de tons AURENA"
+                  class="representation-group representation-group-02"
+                />
+              </div>
+
+              <!-- GRUPO 03 -->
+
+              <div class="representation-row row-03">
+                <img
+                  src="./assets/aurena-grupo-03.png"
+                  alt="Terceiro grupo de tons AURENA"
+                  class="representation-group representation-group-03"
+                />
+              </div>
+            </div>
+
+            <!-- FRASE FINAL -->
+
+            <div class="representation-impact">
+              <span></span>
+
+              <p>
+                São 30 possibilidades
+                <strong> de alguém se reconhecer. </strong>
+              </p>
+
+              <span></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- =====================================================
+     AURENA — MANIFESTO FINAL CINEMATOGRÁFICO
+===================================================== -->
+
+        <section class="aurena-manifesto-final" id="manifestoFinal">
+          <!-- CORTINAS DE ABERTURA -->
+          <div class="manifesto-curtain manifesto-curtain-left"></div>
+          <div class="manifesto-curtain manifesto-curtain-right"></div>
+
+          <!-- GRANDE NÚMERO AO FUNDO -->
+          <div class="manifesto-ghost-number" aria-hidden="true">30</div>
+
+          <!-- HALO CENTRAL -->
+          <div class="manifesto-cinematic-halo" aria-hidden="true"></div>
+
+          <!-- PÓ / TEXTURA -->
+          <div class="manifesto-final-powder" aria-hidden="true"></div>
+
+          <!-- FLASH DE LUZ FINAL -->
+          <div class="manifesto-final-flash" aria-hidden="true"></div>
+
+          <!-- CONTEÚDO -->
+          <div class="manifesto-final-content">
+            <!-- ATO 1 -->
+            <div class="manifesto-act manifesto-act-01">
+              <span class="manifesto-final-eyebrow"> UMA ÚLTIMA PERGUNTA </span>
+
+              <h2 class="manifesto-question">
+                <span>Quantos tons são suficientes</span>
+                <em>para representar o Brasil?</em>
+              </h2>
+            </div>
+
+            <!-- ATO 2 -->
+            <div class="manifesto-act manifesto-act-02">
+              <div class="manifesto-thin-line"></div>
+
+              <p>
+                Talvez a resposta
+                <span>não esteja em um número.</span>
+              </p>
+            </div>
+
+            <!-- ATO 3 -->
+            <div class="manifesto-act manifesto-act-03">
+              <span class="manifesto-small-word"> TALVEZ ESTEJA EM </span>
+
+              <h3>
+                não deixar
+                <strong>ninguém de fora.</strong>
+              </h3>
+
+              <div class="manifesto-answer-line"></div>
+            </div>
+
+            <!-- ATO 4 — MARCA -->
+            <div class="manifesto-brand-final manifesto-act manifesto-act-04">
+              <div class="manifesto-brand-symbol">
+                <span></span>
+              </div>
+
+              <h4 aria-label="AURENA">
+                <span>A</span>
+                <span>U</span>
+                <span>R</span>
+                <span>E</span>
+                <span>N</span>
+                <span>A</span>
+              </h4>
+
+              <p>BELEZA SEM LACUNAS</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

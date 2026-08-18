@@ -4403,3 +4403,118 @@ body.intro-lock {
     font-size: 1.45rem;
   }
 }
+
+.btn-documentacao {
+  margin-top: 35px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  padding: 14px 30px;
+
+  border: 1px solid rgba(211, 132, 74, 0.65);
+  border-radius: 50px;
+
+  background: rgba(211, 132, 74, 0.06);
+
+  color: #d3844a;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  backdrop-filter: blur(8px);
+
+  transition:
+    background 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease,
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.btn-documentacao:hover {
+  background: #d3844a;
+  color: #160b08;
+
+  border-color: #d3844a;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 30px rgba(211, 132, 74, 0.18),
+    0 0 35px rgba(211, 132, 74, 0.1);
+}
+
+.btn-documentacao span {
+  font-size: 17px;
+  transition: transform 0.35s ease;
+}
+
+.btn-documentacao:hover span {
+  transform: translate(3px, -3px);
+}
+
+/* =====================================================
+   BOTÃO DOCUMENTAÇÃO AURENA
+===================================================== */
+
+.solution-documentacao-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 240px;
+
+  margin: 18px auto 0;
+  padding: 13px 24px;
+
+  border: 1px solid rgba(214, 163, 92, 0.65);
+  border-radius: 999px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(214, 163, 92, 0.16),
+    rgba(124, 76, 45, 0.22)
+  );
+
+  color: #f2d3a2;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.solution-documentacao-button:hover {
+  transform: translateY(-3px);
+
+  border-color: #d6a35c;
+
+  background: linear-gradient(
+    135deg,
+    rgba(214, 163, 92, 0.3),
+    rgba(124, 76, 45, 0.35)
+  );
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.25),
+    0 0 22px rgba(214, 163, 92, 0.16);
+}
